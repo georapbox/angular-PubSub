@@ -10,6 +10,9 @@ AngularJS implementation of the [Publish–Subscribe pattern](http://en.wikipedi
 var app = angular.module('app', ['PubSub']);
 ```
 
+##Bower Installation
+<code>bower install angular.pubsub</code>
+
 ##Using PubSub
 
 ### Inject as dependancey
