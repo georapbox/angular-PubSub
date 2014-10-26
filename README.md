@@ -1,7 +1,7 @@
 angular-PubSub
 ==============
 
-AngularJS implementation of the [Publish–Subscribe pattern](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern).
+>AngularJS implementation of the [Publish–Subscribe pattern](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern).
 
 ##Installation
 - Include <code>angular-pubsub.js</code> in your project after <code>angular.js</code>.
