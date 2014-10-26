@@ -5,18 +5,20 @@ AngularJS implementation of the [Publish–Subscribe pattern](http://en.wikipedi
 
 ##Installation
 - Include <code>angular-pubsub.js</code> in your project after <code>angular.js</code>.
-
 - Register to your application: 
 ```js
 var app = angular.module('app', ['PubSub']);
 ```
 
-- Inject the service as a dependancy of the application modules, to use it:
-```js
-var MyController = app.controller('MyController', ['PubSub', function (PubSub) {}]);
-```
-
 ##Using PubSub
+
+### Inject as dependancey
+Inject the service as a dependancy of the application modules, to use it:
+```js
+var MyController = app.controller('MyController', ['PubSub', function (PubSub) {
+	// do your stuff here...
+}]);
+```
 
 ###Subscribing events
 The "listener" is the function to be executed when an event is emitted.
@@ -28,10 +30,10 @@ function listener(topic, data) {
 }
 
 // Subscribe to event
-var sub = ps.subscribe('event-name', listener);
+var sub = PubSub.subscribe('event-name', listener);
 
 // Subscribe to event and execute only one time
-var subOnce = ps.subscribeOnce('event-name', listener)
+var subOnce = PubSub.subscribeOnce('event-name', listener)
 ```
 
 ###Publishing events
@@ -40,7 +42,7 @@ The <code>publish</code> method takes two arguments:
 - The first one is the name of the event.
 - The second one (optional) is the data we may want to pass along as. We can pass data along using an array or an object as shown below.
 ```js
-ps.publish('event-name', {
+PubSub.publish('event-name', {
     prop1: value1,
     prop2: value2
 });
@@ -51,11 +53,11 @@ There are two ways to unsubscribe an event:
 
 - Unsubscribe from a specific topic based on a tokenized reference to the subscription.
 ```js
-ps.unsubscribe(sub);
+PubSub.unsubscribe(sub);
 ```
 - Unsubscribe from a specific topic based on topic name. This way we can unsubscribe all events with the same name.
 ```js
-ps.unsubscribe('event-name);
+PubSub.unsubscribe('event-name);
 ```
 
 ##Methods aliases
@@ -65,7 +67,7 @@ ps.unsubscribe('event-name);
 - <code>off</code> - <code>unsubscribe</code>
 
 ##Minify
-To minify the project, run <code>grunt build</code> command. This will run the removelogging and uglify the code into <code>dist/pubsub.min.js</code>.
+To minify the project, run <code>grunt build</code> command. This will run the removelogging and uglify the code into <code>dist/angular-pubsub.min.js</code>.
 
 ##License
 This code is [MIT](http://opensource.org/licenses/mit-license.php) licenced:
