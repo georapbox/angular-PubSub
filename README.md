@@ -5,7 +5,7 @@ angular-PubSub
 
 ##Installation
 - Include <code>angular-pubsub.js</code> in your project after <code>angular.js</code>.
-- Register to your application: 
+- Register to your application:
 ```js
 var app = angular.module('app', ['PubSub']);
 ```
@@ -60,7 +60,7 @@ PubSub.unsubscribe(sub);
 ```
 - Unsubscribe from a specific topic based on topic name. This way we can unsubscribe all events with the same name.
 ```js
-PubSub.unsubscribe('event-name);
+PubSub.unsubscribe('event-name');
 ```
 
 ##Methods aliases
