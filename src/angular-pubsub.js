@@ -55,7 +55,7 @@
              * @param callback {Function} Callback function to execute on event.
              */
             PubSub.subscribeOnce = function (topic, callback) {
-                this.subscribe(topic, callback, true);
+                return this.subscribe(topic, callback, true);
             };
 
             /**
