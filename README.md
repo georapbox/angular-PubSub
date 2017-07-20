@@ -1,6 +1,8 @@
 # angular-PubSub
+Angular 1.x implementation of the [Publish–Subscribe](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern.
 
-AngularJS implementation of the [Publish–Subscribe](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern.
+> ### NOTE: This repository is no longer maintained.
+> The current repository and the `npm` package are not going anywhere but for future projects, please consider using [PubSub](https://github.com/georapbox/PubSub) package instead. Check the `examples` folder for a working example in Angular 1.x application.
 
 [![npm version](https://badge.fury.io/js/angular-PubSub.svg)](http://badge.fury.io/js/angular-PubSub)
 [![Dependencies](https://david-dm.org/georapbox/angular-PubSub.svg?theme=shields.io)](https://david-dm.org/georapbox/angular-PubSub)

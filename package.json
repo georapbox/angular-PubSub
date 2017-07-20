@@ -1,7 +1,7 @@
 {
   "name": "angular-PubSub",
-  "version": "1.0.0",
-  "description": "AngularJS implementation of the Publish/Subscribe pattern.",
+  "version": "1.0.1",
+  "description": "Angular 1.x implementation of the Publish/Subscribe pattern.",
   "homepage": "https://github.com/georapbox/angular-PubSub",
   "repository": {
     "type": "git",
